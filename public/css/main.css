@@ -1,0 +1,148 @@
+:root {
+    --lightests: #E6B325;
+    --lights: #BF9742;
+    --blues: #A47E3B;
+    --darks: #61481C;
+    --browns: #5F3100;
+    --paper: linear-gradient(90deg, #CEAF8C 0%, #D7C8B4 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    background: linear-gradient(270deg, var(--darks) 0%, var(--blues) 100%);
+    height: 100vh;
+    width: 18vw;
+    border-right: 2px solid black;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(90deg, var(--darks) 0%, var(--blues) 100%);
+    height:100vh;
+    width: 18vw;
+    /* width: 250px; */
+    border-left: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    background: var(--lights);
+    /* linear-gradient(0deg, var(--darks) 0%, var(--lights) 100%); */
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 25vw;
+    height: 80vh;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background: var(--browns);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+    border: 2px solid black;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 2px solid black;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    /* align-items: center; */
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 100px;
+    transition: transform 0.5s;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+button:focus {
+    outline: none;
+    
+}
+
+button:hover i {
+    color: var(--blues);
+}
+
+i {
+    font-size: 50px;
+    color: var(--darks);
+    
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 10;
+}
+
+#p2 {
+    z-index: 9;
+}
+
+#p3 {
+    z-index: 8;
+}

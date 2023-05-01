@@ -1,0 +1,71 @@
+.booktitle {
+    height: 3vh;
+    width: 15vw;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.about {
+    position: fixed;
+    height: 65vh;
+    width: 15vw;
+    border: solid 2px black;
+    margin-top: 5vh;
+    text-align: center;
+    background: var(--paper);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.dishlist {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    height: 65vh;
+    width: 20vw;
+    background: var(--paper);
+}
+
+.dishtitle {
+    display: block;
+    padding-bottom: 2rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.salad-list, .appetizer-list, .bowl-list, .taco-list {
+    height: 65vh;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'Abril Fatface', cursive;
+}
+
+li {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.backcover {
+    height: 65vh;
+    width: 20vw;
+    text-align: center;
+}
+
+.backtitle {
+    width: 15vw;
+    border-bottom: solid 2px black;
+    margin-left: 3vw;
+}
+
+img {   
+    width: 20vw;
+    display: block !important;
+    margin-top: 4vh;
+    padding-left: 1vw;
+    border-radius: 3rem;
+}
+
+li a:hover {
+    color: white;
+}

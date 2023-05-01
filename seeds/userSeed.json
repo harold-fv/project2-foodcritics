@@ -1,0 +1,37 @@
+[
+   {
+    "username": "Michael Smith",
+    "email": "anpch@example.com",
+    "password": "Hello123"
+   },
+   {
+    "username": "Sara Johnson",
+    "email": "sjohnson@aol.com",
+    "password": "Guppie123"
+   },
+   {
+    "username": "Kendall Jenner",
+    "email": "k.jennerh@hotmail.com",
+    "password": "IAmHot123"
+   },
+   {
+    "username": "Kristina Ahn",
+    "email": "kriskris@gmail.com",
+    "password": "Sophia123"
+   },
+   {
+    "username": "Harold Joe",
+    "email": "joejoe@yahoo.com",
+    "password": "Joey777"
+   },
+   {
+    "username": "Sami Watson",
+    "email": "samw@gmail.com",
+    "password": "Watty123"
+   },
+   {
+    "username": "Lizzy Ahn",
+    "email": "Lizard@aol.com",
+    "password": "Girlypop123"
+   }
+]
